@@ -6,13 +6,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image
-        source='https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg'
+        source='https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg' // works on both native and web
         contentFit='contain'
         style={{ width: 150, height: 150 }}
       />
       <View style={{ height: 30 }} />
       <Image
-        source={require('./assets/react-native-logo.svg')}
+        source={require('./assets/react-native-logo.svg')} // only works on native
+        // source={'./assets/react-native-logo.svg'} // only works on web
         contentFit='contain'
         style={{ width: 150, height: 150 }}
       />
